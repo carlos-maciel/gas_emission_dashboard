@@ -62,7 +62,7 @@ with st.sidebar.expander('Gás'):
     f_gases = st.multiselect('Selecione os gases', gases)
 
 with st.sidebar.expander('Estados ou regiões'):
-  filtro_regiao = st.checkbox('Filtrar por região?')
+  filtro_regiao = st.checkbox('Filtrar por região?', value=True)
   estados = dados['Estado'].unique()
 
   if filtro_regiao:
